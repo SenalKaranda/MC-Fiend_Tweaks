@@ -1,0 +1,101 @@
+name: FiendCraft
+version: '${project.version}'
+main: com.tesselex.fiendCraft.fiendCraft
+api-version: 1.17
+prefix: FiendCraft
+depend: [Vault, MicroLib]
+authors: [Senal]
+description: PaperMC Tweaks for the Fiendcraft server.
+website: fiendfam.com
+commands:
+  call:
+    description: Requests to teleport to specified player.
+    usage: /call <player>
+    aliases:
+      -beep
+    permission: tesselex.teleportation.call
+  sethome:
+    description: Sets a new home for specified player.
+    usage: /sethome
+    aliases:
+      - sh
+    permission: tesselex.teleportation.sethome
+  home:
+    description: Teleports player home.
+    usage: /home
+    aliases:
+      - h
+    permission: tesselex.teleportation.home
+  xp:
+    description: Gives XP to specified player.
+    usage: /givexp <player> <xp>
+    aliases:
+      - lvl
+      - level
+    permission: tesselex.stats.xp
+  gm:
+    description: Sets gamemode of specified player.
+    usage: /gm <player> <0-3>
+    permission: tesselex.stats.gamemode
+  feed:
+    description: Feeds specified player.
+    usage: /feed <player> <xp>
+    aliases:
+      - f
+    permission: tesselex.stats.feed
+  heal:
+    description: Heals specified player.
+    usage: /heal <player> <xp>
+    permission: tesselex.stats.heal
+  damage:
+    description: Damages specified player.
+    usage: /damage <player> <xp>
+    aliases:
+      - dmg
+    permission: tesselex.stats.dmg
+  clapcheeks:
+    description: Claps cheeks of specified player.
+    usage: /clapcheeks <player>
+    aliases:
+      - cc
+    permission: tesselex.fun.clapcheeks
+  workbench:
+    description: Opens a virtual workbench.
+    usage: /workbench
+    aliases:
+      - wb
+    permission: tesselex.tools.workbench
+  furnace:
+    description: Opens a virtual furnace.
+    usage: /furnace
+    aliases:
+      - smelt
+    permission: tesselex.tools.furnace
+  warp:
+    description: Teleport to global warp point.
+    usage: /warp <warpName>
+    permission: tesselex.teleportation.warp
+  setwarp:
+    description: Set a global warp point.
+    usage: /setwarp <warpName>
+    permission: tesselex.teleportation.setwarp
+  item:
+    description: Gives item to player.
+    usage: /item <item> <amount>
+    aliases:
+      - i
+    permission: tesselex.inventory.item
+  pay:
+    description: Pay another player.
+    usage: /call <player>
+    permission: tesselex.pay
+  bill:
+    description: Bill another player.
+    usage: /bill <player> <amt>
+    permission: tesselex.bill
+  bank:
+    description: Perform banking operations.
+    usage: /bank <withdraw|deposit|balance> <amt>
+    aliases:
+      - b
+    permission: tesselex.banking
